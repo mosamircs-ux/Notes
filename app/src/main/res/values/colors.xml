@@ -1,3 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- NoteFlow Brand Palette: Modern Material 3 — Indigo & Soft Slate -->
+    <color name="noteflow_indigo_primary">#4F46E5</color>
+    <color name="noteflow_indigo_dark">#3730A3</color>
+    <color name="noteflow_indigo_light">#6366F1</color>
+    <color name="noteflow_indigo_container">#EEF2FF</color>
+    <color name="noteflow_indigo_on_container">#312E81</color>
 
+    <color name="noteflow_canvas_bg">#F8FAFC</color>
+    <color name="noteflow_surface_card">#FFFFFF</color>
+    <color name="noteflow_surface_subtle">#F1F5F9</color>
+    <color name="noteflow_outline">#E2E8F0</color>
+    <color name="noteflow_text_primary">#0F172A</color>
+    <color name="noteflow_text_secondary">#64748B</color>
+    <color name="noteflow_ad_bg">#F1F5F9</color>
+
+    <!-- Override Fossify Commons primary defaults so NoteFlow launches in Indigo & Soft Slate -->
+    <color name="color_primary">#4F46E5</color>
+    <color name="default_app_icon_color">#4F46E5</color>
 </resources>

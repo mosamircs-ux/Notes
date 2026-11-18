@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Bilješke</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Nije moguće dijeliti prazan tekst</string>
     <string name="new_note">Dodaj novu bilješku</string>
     <string name="no_title">Zadaj ime za tvoju bilješku</string>

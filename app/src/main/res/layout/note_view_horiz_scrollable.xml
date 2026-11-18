@@ -15,7 +15,11 @@
         android:gravity="top"
         android:hint="@string/insert_text_here"
         android:inputType="textCapSentences|textMultiLine"
-        android:padding="@dimen/activity_margin"
+        android:lineSpacingMultiplier="1.35"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="48dp"
         android:scrollbars="vertical"
         android:textCursorDrawable="@null" />
 

@@ -9,12 +9,12 @@ open class SimpleActivity : BaseSimpleActivity() {
         R.mipmap.ic_launcher_pink,
         R.mipmap.ic_launcher_purple,
         R.mipmap.ic_launcher_deep_purple,
-        R.mipmap.ic_launcher_indigo,
+        R.mipmap.ic_launcher,
         R.mipmap.ic_launcher_blue,
         R.mipmap.ic_launcher_light_blue,
         R.mipmap.ic_launcher_cyan,
         R.mipmap.ic_launcher_teal,
-        R.mipmap.ic_launcher,
+        R.mipmap.ic_launcher_light_green,
         R.mipmap.ic_launcher_light_green,
         R.mipmap.ic_launcher_lime,
         R.mipmap.ic_launcher_yellow,
@@ -28,5 +28,5 @@ open class SimpleActivity : BaseSimpleActivity() {
 
     override fun getAppLauncherName() = getString(R.string.app_launcher_name)
 
-    override fun getRepositoryName() = "Notes"
+    override fun getRepositoryName() = "NoteFlow"
 }

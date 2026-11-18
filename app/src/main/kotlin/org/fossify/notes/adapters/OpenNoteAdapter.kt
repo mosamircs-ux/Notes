@@ -94,20 +94,7 @@ class OpenNoteAdapter(
         if (context.isBlackAndWhiteTheme()) {
             setBackgroundResource(org.fossify.commons.R.drawable.black_dialog_background)
         } else {
-            val cardBackgroundColor = if (backgroundColor == Color.BLACK) {
-                Color.WHITE
-            } else {
-                Color.BLACK
-            }
-
-            val cardBackground = if (context.isDynamicTheme()) {
-                org.fossify.commons.R.drawable.dialog_you_background
-            } else {
-                org.fossify.commons.R.drawable.dialog_bg
-            }
-
-            background =
-                activity.resources.getColoredDrawableWithColor(cardBackground, cardBackgroundColor, LOWER_ALPHA_INT)
+            setBackgroundResource(R.drawable.bg_noteflow_open_note_card)
         }
     }
 

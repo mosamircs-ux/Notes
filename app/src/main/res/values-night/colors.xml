@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NoteFlow Dark Mode Palette: Deep Slate & Luminous Indigo -->
+    <color name="noteflow_indigo_primary">#6366F1</color>
+    <color name="noteflow_indigo_dark">#4338CA</color>
+    <color name="noteflow_indigo_light">#818CF8</color>
+    <color name="noteflow_indigo_container">#1E1B4B</color>
+    <color name="noteflow_indigo_on_container">#E0E7FF</color>
+
+    <color name="noteflow_canvas_bg">#0F172A</color>
+    <color name="noteflow_surface_card">#1E293B</color>
+    <color name="noteflow_surface_subtle">#1E293B</color>
+    <color name="noteflow_outline">#334155</color>
+    <color name="noteflow_text_primary">#F8FAFC</color>
+    <color name="noteflow_text_secondary">#94A3B8</color>
+    <color name="noteflow_ad_bg">#0B1220</color>
+</resources>

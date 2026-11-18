@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Nótaí</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Ní féidir téacs folamh a roinnt</string>
     <string name="no_title">Ainmnigh do nóta, le do thoil</string>
     <string name="delete_note">Scrios nóta</string>
@@ -38,7 +38,6 @@
     <string name="import_notes">Nótaí Iompórtáil</string>
     <string name="import_notes_pro">Iompórtáil nótaí (Pro)</string>
     <string name="faq_1_text">Sa chás nach bhfuil ach 1 ghiuirléid ghníomhach agat, is féidir leat é a athchruthú, nó úsáid a bhaint as an gcnaipe i socruithe an aip chun é a shaincheapadh. Má tá giuirléidí gníomhacha iolracha agat, ní bheidh an cnaipe sna socruithe app ar fáil. Toisc go dtacaíonn an app le saincheaptha dath in aghaidh an ghiuirléid, beidh ort a athchruthú an ghiuirléid is mian leat a shaincheapadh.</string>
-    <string name="widget_config">Go raibh maith agat as Fossify Notes a úsáid.\nLe haghaidh tuilleadh aipeanna ó Fossify, tabhair cuairt ar fossify.org.</string>
     <string name="new_note">Cuir nóta nua leis</string>
     <string name="title_taken">Tá nóta leis an teideal sin ann cheana</string>
     <string name="open_note">Nóta oscailte</string>

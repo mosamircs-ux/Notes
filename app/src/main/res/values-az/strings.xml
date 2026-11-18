@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Qeydlər</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Boş mətni paylaşmaq olmur</string>
     <string name="new_note">Yeni qeyd əlavə et</string>
     <string name="no_title">Qeydi adlandırın</string>
@@ -40,5 +40,4 @@
     <string name="autosave_notes">Qeydləri avtomatik saxla</string>
     <string name="enable_line_wrap">Cız sarğısını göstər</string>
     <string name="import_folder">Qovluq daxil et</string>
-    <string name="widget_config">Fossify Qeydləri istifadə etdiyiniz üçün təşəkkür edirik!\nFossify-dan olan digər tətbiqlər üçün, fossify.org saytına daxil olun.</string>
 </resources>

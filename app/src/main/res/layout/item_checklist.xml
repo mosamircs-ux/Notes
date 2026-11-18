@@ -5,13 +5,19 @@
     android:id="@+id/checklist_holder"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="?attr/selectableItemBackground"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/bg_noteflow_task_card"
     android:clickable="true"
     android:focusable="true"
     android:foreground="@drawable/selector"
     android:minHeight="@dimen/checklist_height"
-    android:paddingStart="@dimen/normal_margin"
-    android:paddingEnd="@dimen/small_margin">
+    android:paddingStart="12dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="6dp">
 
     <org.fossify.commons.views.MyAppCompatCheckbox
         android:id="@+id/checklist_checkbox"
@@ -28,13 +34,15 @@
         android:id="@+id/checklist_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:lineSpacingMultiplier="1.25"
         android:textSize="@dimen/bigger_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/checklist_drag_handle"
         app:layout_constraintStart_toEndOf="@id/checklist_checkbox"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_goneMarginEnd="@dimen/normal_margin"
-        tools:text="Apples 🍎" />
+        tools:text="Apples" />
 
     <ImageView
         android:id="@+id/checklist_drag_handle"

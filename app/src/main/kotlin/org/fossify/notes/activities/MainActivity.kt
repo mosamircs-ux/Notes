@@ -33,12 +33,12 @@ import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.core.net.toUri
 import androidx.viewpager.widget.ViewPager
+import com.google.android.gms.ads.AdView
 import org.fossify.commons.dialogs.ConfirmationAdvancedDialog
 import org.fossify.commons.dialogs.ConfirmationDialog
 import org.fossify.commons.dialogs.FilePickerDialog
 import org.fossify.commons.dialogs.RadioGroupDialog
 import org.fossify.commons.dialogs.SecurityDialog
-import org.fossify.commons.extensions.appLaunched
 import org.fossify.commons.extensions.appLockManager
 import org.fossify.commons.extensions.applyColorFilter
 import org.fossify.commons.extensions.applyFontToViewRecursively
@@ -113,6 +113,7 @@ import org.fossify.notes.extensions.safeSetSelection
 import org.fossify.notes.extensions.updateWidgets
 import org.fossify.notes.extensions.widgetsDB
 import org.fossify.notes.fragments.TextFragment
+import org.fossify.notes.helpers.AdManager
 import org.fossify.notes.helpers.MIME_TEXT_PLAIN
 import org.fossify.notes.helpers.MyMovementMethod
 import org.fossify.notes.helpers.NEW_CHECKLIST
@@ -156,17 +157,29 @@ class MainActivity : SimpleActivity() {
     private lateinit var searchPrevBtn: ImageView
     private lateinit var searchNextBtn: ImageView
     private lateinit var searchClearBtn: ImageView
+    private var bannerAdView: AdView? = null
 
     private val binding by viewBinding(ActivityMainBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        appLaunched(BuildConfig.APPLICATION_ID)
+        baseConfig.appRunCount++
+        binding.mainToolbar.setLogo(R.drawable.ic_noteflow_mark)
+        binding.mainToolbar.titleMarginStart = resources.getDimensionPixelSize(org.fossify.commons.R.dimen.medium_margin)
         setupOptionsMenu()
         refreshMenuItems()
 
-        setupEdgeToEdge(padBottomImeAndSystem = listOf(binding.viewPager))
+        setupEdgeToEdge(padBottomImeAndSystem = listOf(binding.mainLinearLayout))
+        binding.adBannerContainer.post {
+            AdManager.gatherConsentAndLoadBanner(
+                activity = this,
+                adContainer = binding.adBannerContainer,
+                dividerView = binding.adBannerDivider
+            ) { adView ->
+                bannerAdView = adView
+            }
+        }
         searchQueryET = findViewById(org.fossify.commons.R.id.search_query)
         searchPrevBtn = findViewById(org.fossify.commons.R.id.search_previous)
         searchNextBtn = findViewById(org.fossify.commons.R.id.search_next)
@@ -199,6 +212,7 @@ class MainActivity : SimpleActivity() {
 
     override fun onResume() {
         super.onResume()
+        bannerAdView?.resume()
         setupTopAppBar(binding.mainAppbar)
         if (storedEnableLineWrap != config.enableLineWrap) {
             initViewPager()
@@ -236,11 +250,14 @@ class MainActivity : SimpleActivity() {
     }
 
     override fun onPause() {
+        bannerAdView?.pause()
         super.onPause()
         storeStateVariables()
     }
 
     override fun onDestroy() {
+        bannerAdView?.destroy()
+        bannerAdView = null
         super.onDestroy()
         if (!isChangingConfigurations) {
             NotesDatabase.destroyInstance()
@@ -274,8 +291,6 @@ class MainActivity : SimpleActivity() {
                 mNotes.isNotEmpty() && (::mCurrentNote.isInitialized && !mCurrentNote.isLocked())
             findItem(R.id.unlock_note).isVisible =
                 mNotes.isNotEmpty() && (::mCurrentNote.isInitialized && mCurrentNote.isLocked())
-            findItem(R.id.more_apps_from_us).isVisible =
-                resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)
             findItem(R.id.delete_note).isVisible = !isDefaultEmptyNote || mNotes.size > 1
 
             saveNoteButton = findItem(R.id.save_note)
@@ -312,7 +327,6 @@ class MainActivity : SimpleActivity() {
                 R.id.export_as_file -> fragment?.handleUnlocking { tryExportAsFile() }
                 R.id.print -> fragment?.handleUnlocking { printText() }
                 R.id.delete_note -> fragment?.handleUnlocking { displayDeleteNotePrompt() }
-                R.id.more_apps_from_us -> launchMoreAppsFromUsIntent()
                 R.id.settings -> launchSettings()
                 R.id.about -> launchAbout()
                 R.id.remove_done_items -> fragment?.handleUnlocking { removeDoneItems() }
@@ -780,53 +794,8 @@ class MainActivity : SimpleActivity() {
     }
 
     private fun launchAbout() {
-        val licenses = LICENSE_RTL
-
-        val faqItems = arrayListOf(
-            FAQItem(
-                title = org.fossify.commons.R.string.faq_1_title_commons,
-                text = org.fossify.commons.R.string.faq_1_text_commons
-            ),
-            FAQItem(
-                title = R.string.faq_1_title,
-                text = R.string.faq_1_text
-            )
-        )
-
-        if (resources.getBoolean(org.fossify.commons.R.bool.is_google_play_build)) {
-            faqItems.add(
-                FAQItem(
-                    title = org.fossify.commons.R.string.faq_2_title_commons,
-                    text = org.fossify.commons.R.string.faq_2_text_commons
-                )
-            )
-            faqItems.add(
-                FAQItem(
-                    title = org.fossify.commons.R.string.faq_6_title_commons,
-                    text = org.fossify.commons.R.string.faq_6_text_commons
-                )
-            )
-            faqItems.add(
-                FAQItem(
-                    title = org.fossify.commons.R.string.faq_7_title_commons,
-                    text = org.fossify.commons.R.string.faq_7_text_commons
-                )
-            )
-            faqItems.add(
-                FAQItem(
-                    title = org.fossify.commons.R.string.faq_10_title_commons,
-                    text = org.fossify.commons.R.string.faq_10_text_commons
-                )
-            )
-        }
-
-        startAboutActivity(
-            appNameId = R.string.app_name,
-            licenseMask = licenses,
-            versionName = BuildConfig.VERSION_NAME,
-            faqItems = faqItems,
-            showFAQBeforeMail = true
-        )
+        hideKeyboard()
+        startActivity(Intent(applicationContext, AboutNoteFlowActivity::class.java))
     }
 
     private fun tryOpenFile() {

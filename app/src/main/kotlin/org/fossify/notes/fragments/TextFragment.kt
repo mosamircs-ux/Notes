@@ -195,7 +195,9 @@ class TextFragment : NoteFragment() {
         }
 
         if (config.showWordCount) {
-            binding.notesCounter.setTextColor(requireContext().getProperTextColor())
+            binding.notesCounter.setTextColor(
+                androidx.core.content.ContextCompat.getColor(requireContext(), R.color.noteflow_indigo_on_container)
+            )
             setWordCounter(noteEditText.text.toString())
         }
 
@@ -273,8 +275,8 @@ class TextFragment : NoteFragment() {
     fun getCurrentNoteViewText() = noteEditText.text?.toString()
 
     private fun setWordCounter(text: String) {
-        val words = text.replace("\n", " ").split(" ")
-        binding.notesCounter.text = words.count { it.isNotEmpty() }.toString()
+        val words = text.replace("\n", " ").split(" ").count { it.isNotEmpty() }
+        binding.notesCounter.text = getString(R.string.noteflow_word_count_format, words)
     }
 
     fun undo() {

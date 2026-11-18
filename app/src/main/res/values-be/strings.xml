@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Нататкі</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Немагчыма абагуліць пусты тэкст</string>
     <string name="new_note">Дадаць новую нататку</string>
     <string name="no_title">Назавіце нататку</string>
@@ -69,7 +69,6 @@
     <string name="import_notes_pro">Імпартаваць нататкі (Pro)</string>
     <string name="faq_1_title">Як змяніць колер віджэта\?</string>
     <string name="faq_1_text">Калі ў вас ёсць толькі 1 Актыўны віджэт, вы можаце альбо ўзнавіць яго зноўку, альбо выкарыстоўваць кнопку ў наладах прыкладання для яго Налады. Калі ў вас некалькі актыўных віджэтаў, кнопка ў наладах прыкладання будзе недаступная. Паколькі прыкладанне падтрымлівае наладу колеру для кожнага фішкі, вам прыйдзецца ўзнавіць віджэт, які вы хочаце наладзіць.</string>
-    <string name="widget_config">Дзякуй за выкарыстанне Нататак Fossify. \nБольш праграм ад Fossify даступна на fossify.org.</string>
     <string name="cannot_load_over_internet">Праграма не можа загрузіць файлы праз сетку</string>
     <string name="allow_alarm_automatic_backups">Каб рэзерваваць нататкі аўтаматычна, калі ласка, дазвольце праграме задаваць пэўныя будзільнікі.</string>
     <string name="this_note_is_linked">Гэта нататка звязана з лакальным файлам.</string>

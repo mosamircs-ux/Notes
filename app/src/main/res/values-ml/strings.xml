@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="import_notes">കുറിപ്പുകൾ ഇറക്കുമതി ചെയ്യുക</string>
     <string name="delete_checked_items">പരിശോധിച്ച ഇനങ്ങൾ ഇല്ലാതാക്കുക</string>
@@ -7,7 +7,7 @@
         <item quantity="other">%d പരിശോധിച്ച ഇനങ്ങൾ</item>
     </plurals>
     <string name="no_title">ദയവായി നിങ്ങളുടെ കുറിപ്പിന് പേര് നൽകുക</string>
-    <string name="app_launcher_name">കുറിപ്പുകൾ</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="title_taken">ആ തലക്കെട്ടുള്ള ഒരു കുറിപ്പ് ഇതിനകം നിലവിലുണ്ട്</string>
     <string name="open_note">കുറിപ്പ് തുറക്കുക</string>
     <string name="delete_note">കുറിപ്പ് ഇല്ലാതാക്കുക</string>
@@ -20,7 +20,6 @@
     <string name="new_note">ഒരു പുതിയ കുറിപ്പ് ചേർക്കുക</string>
     <string name="text_note">വാചക കുറിപ്പ്</string>
     <string name="new_note_type">പുതിയ കുറിപ്പ് തരം:</string>
-    <string name="widget_config">ഫോസിഫൈ നോട്ടുകൾ ഉപയോഗിച്ചതിന് നന്ദി.\nഫോസിഫൈയിൽ നിന്നുള്ള കൂടുതൽ ആപ്പുകൾക്കായി, ദയവായി fossify.org സന്ദർശിക്കുക.</string>
     <string name="show_content">ഉള്ളടക്കം കാണിക്കുക</string>
     <string name="new_text_note">പുതിയ വാചക കുറിപ്പ്</string>
     <string name="display_success_message">വിജയിച്ച സന്ദേശങ്ങൾ പ്രദർശിപ്പിക്കുക</string>

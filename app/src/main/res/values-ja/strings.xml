@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">メモ</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">空のテキストは共有できません</string>
     <string name="new_note">新しいメモを追加</string>
     <string name="no_title">メモに名前をつけてください</string>
@@ -68,7 +68,6 @@
     <string name="import_notes_pro">メモをインポート (Pro)</string>
     <string name="faq_1_title">ウィジェットの色はどう変更できますか？</string>
     <string name="faq_1_text">アクティブなウィジェットが一つしかない場合、ウィジェットを再作成するか、アプリ設定内のボタンを押してカスタマイズできます。アクティブなウィジェットが複数ある場合、アプリ設定内のボタンは使用できません。アプリはウィジェットごとの色のカスタマイズをサポートしているので、カスタマイズしたいウィジェットは再作成する必要があります。</string>
-    <string name="widget_config">Fossify Notesをご利用いただきありがとうございます。\nFossifyからより多くのアプリのために、訪問してくださいfossify.org...</string>
     <string name="unlock_notes">ノートのロックを解除する</string>
     <string name="found_locked_notes_info">以下のノートはロックされています。1つずつロックを解除するか、エクスポートをスキップしてください。</string>
 </resources>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Notlar</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="widget_config">Fossify Notlar\'ı kullandığınız için teşekkür ederiz.
 \nFossify\'dan daha fazla uygulama için lütfen fossify.org adresini ziyaret edin.</string>
     <string name="cannot_share_empty_text">Boş metin paylaşılamaz</string>

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">الملاحظات</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">لا يمكن مشاركة نص فارغ</string>
     <string name="new_note">إضافة ملاحظة</string>
     <string name="no_title">الرجاء تسمية الملاحظة</string>
@@ -75,7 +75,6 @@
     <string name="uncheck_all_items">قم بإلغاء تحديد جميع العناصر</string>
     <string name="add_to_the_top">أضف إلى الأعلى</string>
     <string name="use_for_this_checklist">استخدم لهذه القائمة فقط</string>
-    <string name="widget_config">شكرًا لاستخدامك Fossify Notes.\nللمزيد من تطبيقات Fossify، يُرجى زيارة fossify.org.</string>
     <plurals name="num_checked_items">
         <item quantity="zero">لم يُحدد أي عنصر</item>
         <item quantity="one">عنصر واحد محدد</item>

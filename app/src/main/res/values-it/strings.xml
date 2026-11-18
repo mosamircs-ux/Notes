@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Note</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="widget_config">Grazie per aver utilizzato Note Fossify.
 \nPer ulteriori applicazioni da Fossify, si prega di visitare fossify.org.</string>
     <string name="cannot_share_empty_text">Impossibile condividere un testo vuoto</string>

@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-400q-17 0-28.5-11.5T160-440q0-17 11.5-28.5T200-480h200q17 0 28.5 11.5T440-440q0 17-11.5 28.5T400-400H200Zm0-160q-17 0-28.5-11.5T160-600q0-17 11.5-28.5T200-640h360q17 0 28.5 11.5T600-600q0 17-11.5 28.5T560-560H200Zm0-160q-17 0-28.5-11.5T160-760q0-17 11.5-28.5T200-800h360q17 0 28.5 11.5T600-760q0 17-11.5 28.5T560-720H200Zm320 520v-66q0-8 3-15.5t9-13.5l209-208q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L655-172q-6 6-13.5 9t-15.5 3h-66q-17 0-28.5-11.5T520-200Zm300-223-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <defs>
+    <linearGradient id="nfBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="55%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+  </defs>
+  <rect width="108" height="108" rx="22" fill="url(#nfBg)"/>
+  <circle cx="24" cy="20" r="36" fill="#FFFFFF" fill-opacity="0.16"/>
+  <path d="M37,26h27l13,13v37c0,3.31-2.69,6-6,6H37c-3.31,0-6-2.69-6-6V32C31,28.69,33.69,26,37,26z" fill="#FFFFFF"/>
+  <path d="M64,26v9c0,2.21,1.79,4,4,4h9L64,26z" fill="#C7D2FE"/>
+  <rect x="37" y="43" width="24" height="5" rx="2.5" fill="#E0E7FF"/>
+  <rect x="37" y="52" width="33" height="5" rx="2.5" fill="#C7D2FE"/>
+  <path d="M39.5,69.5C44.5,62 50.5,62 55,67.5C59.5,73 65.5,73 71,64.5" fill="none" stroke="#4F46E5" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="71.2" cy="64.2" r="2.6" fill="#6366F1"/>
+</svg>

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">노트</string>
-    <string name="widget_config">Fossify 노트를 사용해 주셔서 감사합니다.\nFossify의 더 많은 앱들을 보려면, fossify.org를 방문해주세요.</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">빈 텍스트는 공유할 수 없습니다</string>
     <string name="new_note">새 노트 추가</string>
     <string name="no_title">노트의 이름을 정해주세요</string>

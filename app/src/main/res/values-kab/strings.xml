@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Tizmilin</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="alignment">Asettef</string>
     <string name="left">Zelmaḍ</string>
     <string name="center">Talemmast</string>
@@ -29,7 +29,6 @@
     <string name="this_note_is_linked">Tazmilt-a teqqen ɣer ufaylu adigan.</string>
     <string name="display_success_message">Sken iznan n usekles i yeddan akken iwata</string>
     <string name="show_character_count">Sken-d amḍan n isekkilen</string>
-    <string name="widget_config">Tanemmirt imi ay tesqedced tizmilin Fossify.\nI wugar n yisnasen seg Fossify, Ma ulac aɣilif rzu ɣer fossify.org.</string>
     <string name="cannot_share_empty_text">Ur tezmireḍ ara ad tebḍuḍ aḍris ilem</string>
     <string name="new_note">Rnu tazmilt tamaynut</string>
     <string name="no_title">Ttxil-k-m semmi i tazmilt-ik-im</string>

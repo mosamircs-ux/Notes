@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Notas</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Non pode compartir un texto baleiro</string>
     <string name="new_note">Engadir unha nova nota</string>
     <string name="no_title">Déalle nome á nota</string>
@@ -67,7 +67,6 @@
     <string name="import_notes_pro">Importar notas (Pro)</string>
     <string name="faq_1_title">Como podo cambiala cor dos widgets\?</string>
     <string name="faq_1_text">No caso de que teñas só un widget activo, podes crealo de novo ou usar o botón nos axustes do app para personalizalo.</string>
-    <string name="widget_config">Grazas por empregar Notas Fossify.\nPara máis aplicacións de Fossify, visita fossify.org.</string>
     <string name="lock_note">Bloquear nota</string>
     <string name="cannot_load_over_internet">O app non pode cargar arquivos a través de Internet</string>
     <string name="allow_alarm_automatic_backups">Para facer unha copia de respaldo automática das notas, autorice ao app a programar alarmas exactas.</string>

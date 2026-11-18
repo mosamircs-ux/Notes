@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">မှတ်စုများ</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">မှတ်စုအလွတ်ကို မမျှ​ဝေနိုင်ပါ</string>
     <string name="new_note">မှတ်စုအသစ်</string>
     <string name="no_title">ကျေးဇူးပြု၍မှတ်စုအသစ်​ခေါင်းစဥ် ပေးပါ</string>

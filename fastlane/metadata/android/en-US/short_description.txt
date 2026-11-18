@@ -1,1 +1,1 @@
-To do list widget with a notebook organizer, checklist, simple shopping list
+Clean Material 3 notepad, smart checklists, private lock & home screen widgets.

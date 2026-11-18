@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Напомене</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Не можете да делите празан текст</string>
     <string name="new_note">Додајте нову белешку</string>
     <string name="no_title">Молимо да наведете своју белешку</string>
@@ -66,7 +66,6 @@
     <string name="faq_1_text">У случају да имате само 1 активан виџет, можете га поново креирати или користити дугме у подешавањима апликације да бисте га прилагодили. Ако имате више активних виџета, дугме у подешавањима апликације неће бити доступно. Пошто апликација подржава прилагођавање боја по виџету, мораћете поново да креирате виџет који желите да прилагодите.</string>
     <string name="allow_alarm_automatic_backups">Како би аутоматски направили резервну копију белешки, молимо вас да дозволите апликацији да заказује тачне аларме.</string>
     <string name="password_protect_note_deletion">Заштитите брисање белешки лозинком</string>
-    <string name="widget_config">Хвала Вам што користите Fossify Notes.\n За више апликација од Fossify-а, посетите fossify.org.</string>
     <string name="unlock_notes">Откључајте белешке</string>
     <string name="found_locked_notes_info">Следеће белешке су закључане. Можете их откључати једну по једну или прескочити њихово извозење.</string>
     <string name="cannot_load_over_internet">Апликација не може учитати фајлове преко интернета</string>

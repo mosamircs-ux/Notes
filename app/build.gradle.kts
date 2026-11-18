@@ -25,8 +25,13 @@ fun hasSigningVars(): Boolean {
 
 base {
     val versionCode = project.property("VERSION_CODE").toString().toInt()
-    archivesName = "notes-$versionCode"
+    archivesName = "noteflow-$versionCode"
 }
+
+val admobTestAppId = "ca-app-pub-3940256099942544~3347511713"
+val admobTestBannerUnitId = "ca-app-pub-3940256099942544/9214589741"
+val releaseAdmobAppId = project.findProperty("ADMOB_APP_ID")?.toString()?.takeIf { it.isNotBlank() } ?: admobTestAppId
+val releaseAdmobBannerUnitId = project.findProperty("ADMOB_BANNER_AD_UNIT_ID")?.toString()?.takeIf { it.isNotBlank() } ?: admobTestBannerUnitId
 
 android {
     compileSdk = project.libs.versions.app.build.compileSDKVersion.get().toInt()
@@ -70,6 +75,8 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
+            manifestPlaceholders["admobAppId"] = admobTestAppId
+            buildConfigField("String", "ADMOB_BANNER_AD_UNIT_ID", "\"$admobTestBannerUnitId\"")
         }
         release {
             isMinifyEnabled = true
@@ -77,6 +84,8 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            manifestPlaceholders["admobAppId"] = releaseAdmobAppId
+            buildConfigField("String", "ADMOB_BANNER_AD_UNIT_ID", "\"$releaseAdmobBannerUnitId\"")
             if (keystorePropertiesFile.exists() || hasSigningVars()) {
                 signingConfig = signingConfigs.getByName("release")
             }
@@ -114,7 +123,7 @@ android {
         )
     }
 
-    namespace = project.property("APP_ID").toString()
+    namespace = "org.fossify.notes"
 
     lint {
         checkReleaseBuilds = false
@@ -140,6 +149,8 @@ detekt {
 
 dependencies {
     implementation(libs.fossify.commons)
+    implementation(libs.google.play.services.ads)
+    implementation(libs.google.ump)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.documentfile)
     implementation(libs.kotlinx.serialization.json)

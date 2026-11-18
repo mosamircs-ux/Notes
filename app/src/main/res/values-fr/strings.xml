@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="widget_config">Merci d\'utiliser Fossify Notes.
 \nPour plus d\'applications de Fossify, veuillez visiter fossify.org.</string>
@@ -74,7 +74,7 @@
     <string name="import_notes_pro">Importer des notes (Pro)</string>
     <string name="faq_1_title">Comment puis-je changer la couleur des widgets \?</string>
     <string name="faq_1_text">Si vous avez seulement un widget actif, vous pouvez soit le recréer, soit utiliser le bouton dans les paramètres pour le personnaliser. Si vous avez plusieurs widgets actifs, le bouton dans les paramètres ne sera pas disponible. Comme l\'application supporte la personnalisation de la couleur par widget, vous devrez recréer le widget que vous voulez personnaliser.</string>
-    <string name="app_launcher_name">Notes</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="password_protect_note_deletion">La suppression des notes est protégée par un mot de passe</string>
     <string name="allow_alarm_automatic_backups">Pour sauvegarder automatiquement les notes, veuillez autoriser l\'application à programmer des alarmes précises.</string>
     <string name="this_note_is_linked">Cette note est liée à un fichier local.</string>

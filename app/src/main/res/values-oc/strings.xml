@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Nòtas</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">Se pòt pas partejar un tèxt void</string>
     <string name="no_title">Mercés de donar un nom a la nòta</string>
     <string name="open_note">Dobrir una nòta</string>
@@ -36,5 +36,4 @@
     <string name="show_note_title">Mostrar lo títol de la nòta</string>
     <string name="new_note_type">Tipe novèl de nòta :</string>
     <string name="note_content_locked">Lo contengut de las nòtas es verrolhat.</string>
-    <string name="widget_config">Mercés d\'utilizar Fossify Notes.\nPer mai d\'aplicacions de Fossify, visitatz fossify.org.</string>
 </resources>

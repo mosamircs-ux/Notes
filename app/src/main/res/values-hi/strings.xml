@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="cannot_share_empty_text">खाली पाठ साझा नहीं किया जा सकता</string>
     <string name="no_title">कृपया अपने नोट को नाम दें</string>
@@ -14,7 +14,7 @@
     <string name="add_new_checklist_items_top">शीर्ष पर नए चेकलिस्ट आइटम जोड़ें</string>
     <string name="add_new_checklist_items">नई चेकलिस्ट आइटम जोड़ें</string>
     <string name="faq_1_text">यदि आपके पास केवल 1 सक्रिय विजेट है, तो आप या तो इसे फिर से बना सकते हैं, या इसे अनुकूलित करने के लिए ऐप सेटिंग्स में बटन का उपयोग कर सकते हैं। यदि आपके पास एकाधिक सक्रिय विजेट हैं, तो ऐप सेटिंग में बटन उपलब्ध नहीं होगा। चूंकि ऐप प्रति-विजेट रंग अनुकूलन का समर्थन करता है, इसलिए आपको उस विजेट को फिर से बनाना होगा जिसे आप अनुकूलित करना चाहते हैं।</string>
-    <string name="app_launcher_name">नोट्स</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="widget_config">Fossify Notes का उपयोग करने के लिए धन्यवाद।
 \nFossify के अधिक ऐप्स के लिए, कृपया fossify.org पर जाएँ।</string>
     <string name="new_note">एक नया नोट जोड़ें</string>

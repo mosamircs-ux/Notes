@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Notes</string>
-    <string name="widget_config">Thank you for using Fossify Notes.\nFor more apps from Fossify, please visit fossify.org.</string>
+    <string name="app_launcher_name">NoteFlow</string>
+    <string name="widget_config">Thank you for using NoteFlow.\nOrganize your notes and checklists effortlessly.</string>
     <string name="cannot_share_empty_text">Cannot share empty text</string>
     <string name="new_note">Add a new note</string>
     <string name="no_title">Please name your note</string>
@@ -88,8 +88,16 @@
     <!-- FAQ -->
     <string name="faq_1_title">How can I change the widgets color?</string>
     <string name="faq_1_text">In case you have only 1 active widget, you can either recreate it, or use the button in the app settings for customizing it. If you have multiple active widgets, the button in the app settings will not be available. As the app supports color customization per-widget, you will have to recreate the widget that you want to customize.</string>
-    <!--
-        Haven't found some strings? There's more at
-        https://github.com/FossifyOrg/Commons/tree/master/commons/src/main/res
-    -->
+
+    <!-- NoteFlow Branding & About -->
+    <string name="noteflow_tagline">Effortless Notes &amp; Smart Checklists</string>
+    <string name="noteflow_version_format">Version %s</string>
+    <string name="noteflow_about_summary">NoteFlow is a fast, clean, Material 3 note-taking and checklist workspace designed to keep your ideas, tasks, and reminders organized.</string>
+    <string name="noteflow_features_title">Highlights</string>
+    <string name="noteflow_features_body">• Rich text notes with undo/redo, live search &amp; word count\n• Smart checklists with drag-to-reorder &amp; completed collapse\n• Per-note &amp; app-level PIN/biometric lock\n• JSON backup, auto-backups &amp; customizable home widgets</string>
+    <string name="noteflow_license_title">Open-Source License (GPLv3)</string>
+    <string name="noteflow_license_body">NoteFlow is licensed under the GNU General Public License v3.0 (GPLv3) and is based on the open-source Fossify Notes project. Source code and license terms are preserved in accordance with GPLv3.</string>
+    <string name="noteflow_privacy_title">Privacy &amp; Ads</string>
+    <string name="noteflow_privacy_body">Your notes and checklists stay stored locally on your device. NoteFlow uses Google AdMob banner advertising to keep the app free.</string>
+    <string name="noteflow_word_count_format">%d words</string>
 </resources>

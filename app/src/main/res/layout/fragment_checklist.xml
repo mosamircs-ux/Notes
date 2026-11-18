@@ -14,7 +14,10 @@
             android:id="@+id/note_locked_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/activity_margin"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_noteflow_surface_card"
+            android:gravity="center"
+            android:padding="24dp"
             android:visibility="gone">
 
             <ImageView
@@ -22,7 +25,6 @@
                 android:layout_width="@dimen/normal_icon_size"
                 android:layout_height="@dimen/normal_icon_size"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/activity_margin"
                 android:src="@drawable/ic_lock_vector" />
 
             <org.fossify.commons.views.MyTextView
@@ -31,9 +33,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/note_locked_image"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/activity_margin"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
                 android:paddingStart="@dimen/bigger_margin"
-                android:paddingTop="@dimen/medium_margin"
                 android:paddingEnd="@dimen/bigger_margin"
                 android:text="@string/note_content_locked" />
 
@@ -43,10 +45,14 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/note_locked_label"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/medium_margin"
-                android:background="@drawable/ripple_all_corners"
-                android:padding="@dimen/activity_margin"
-                android:text="@string/show_content" />
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_noteflow_pill"
+                android:paddingStart="24dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="12dp"
+                android:text="@string/show_content"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Notas</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="cannot_share_empty_text">No se puede compartir una nota vacía</string>
     <string name="new_note">Añadir una nueva nota</string>
     <string name="no_title">Por favor, asigne un nombre a la nota</string>

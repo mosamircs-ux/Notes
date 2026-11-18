@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_launcher_name">Notoj</string>
+    <string name="app_launcher_name">NoteFlow</string>
     <string name="new_note">Krei novan noton</string>
     <string name="open_note">Malfermi noton</string>
     <string name="delete_note">Forviŝi noton</string>
@@ -36,7 +36,6 @@
     <string name="locking_warning">ATENTU: Se vi forgesas la pasvorton de la noto, vi ne povos restaŭri ĝin nek atingi ĝian enhavon.</string>
     <string name="delete_file_itself">Ankaŭ forigi la dosieron \"%s\"</string>
     <string name="password_protect_note_deletion">Protekti forigon de notoj per pasvorto</string>
-    <string name="widget_config">Dankon pro uzi Fossify Notojn.\nPor pli da aplikaĵoj de Fossify, bonvolu viziti fossify.org.</string>
     <string name="no_title">Bonvolu nomi vian noton</string>
     <string name="title_taken">Jam ekzistas noto kun tiu titolo</string>
     <string name="unlock_notes">Malŝlosi notojn</string>
